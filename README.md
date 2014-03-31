@@ -1,12 +1,7 @@
-[Core](#Core)	
-  
-<a name="core"/>
-# Core app
+# Multi core test
+This code creates a new process per CPU core. Each of those process are http web servers that listen to localhost:8000. The balancer takes care of calls to port 8000 and redirects them to one of the available workers. Every worker is going to process a request during his lifetime. Then, it suicides. It means you can call localhost:8000 as many times as number of cores you have on your CPU.
 
-This application creates a new process per CPU core. Each of those process are http web servers that listen to localhost:8000. The balancer takes care of calls to port 8000 and redirects them to one of the available workers. Every worker is going to process a request during his lifetime. Then, it suicides. It means you can call localhost:8000 as many times as number of cores you have on your CPU.
-
-There are two versions of the same app, one with console logs, and the second lines with no logs to fit the 50 lines of code specs.
-
+There are two versions of the same application, one with console logs, and the second with no logs to fit the 50 lines 
 ## Usage
 ```
 $node core

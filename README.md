@@ -13,7 +13,7 @@ Then, call localhost:8000 from an http client. Calls from browsers also request 
 # Core Search
 
 What it does:
-- Runs a recursive word search algorithm in the master process 
+- Runs a recursive word search algorithm in the parent process 
 - Creates a forked process per CPU core
 - Runs the same recursive algorithm on each child process
 - Default search word: 'hola'

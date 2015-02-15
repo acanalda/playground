@@ -1,3 +1,5 @@
+This is just a test lab repository. Just some random code I´ve created to play nodeJS.
+
 <a name="core"/>
 # Core
 

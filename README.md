@@ -1,6 +1,8 @@
 [core](#Core)
 [core_search](#Core)
   
+This is just a test lab repository. Just some random code I´ve created to play with nodeJS. Don´t take it too serious.
+
 <a name="core"/>
 # Core
 
@@ -14,8 +16,18 @@ $node core
 ```
 Then, call localhost:8000 from an http client. Calls from browsers also request favicon.ico, so you´ll get two (or more) calls
 
-## Libraries
-All nodeJS native. Avoided external libraries (async, ...) for an easy deploy/usage
-
 <a name="core_search"/>
 # Core Search
+# Core Search
+
+What it does:
+- Runs a matrix recursive word search algorithm in the parent process 
+- Creates a forked process per CPU core
+- Runs the same recursive algorithm on each child process
+- Default search word: 'hola'
+- Random array size: 5000
+
+## Usage
+```
+$word=adios node core_search
+```

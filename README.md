@@ -1,7 +1,7 @@
 [core](#Core)
 [core_search](#Core)
   
-This is just a test lab repository. Just some random code I´ve created to play with nodeJS. Don´t take it too serious.
+This is just random code I´ve created to play with nodeJS. Don´t take it too seriously.
 
 <a name="core"/>
 # Core
